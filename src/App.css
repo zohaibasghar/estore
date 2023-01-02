@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+}
+.navbar-brand img {
+  margin-right: 16px;
+}
+.cart-icon,
+.signed-person {
+  cursor: pointer;
+}
+.cart-icon:hover {
+  transform: scale(1.2);
+}
+.signed-person {
+  margin: 0 20px;
+}
+
+.cart-icon:hover,
+.signed-person:hover {
+  color: #a39b8b;
+}
+.carousel img {
+  height: 500px;
+  margin: 0 0 20px 0;
+}
+#mainPageAd img{
+  margin-top: 10px;
+border-radius: 12px;
+}
