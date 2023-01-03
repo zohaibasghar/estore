@@ -5,7 +5,7 @@ const Home = (props) => {
 
   return (
     <div className="container">
-      {<Products category={props.category}/>}
+      {<Products category={props.category}  progress={props.progress}/>}
     </div>
   );
 };

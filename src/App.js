@@ -12,7 +12,7 @@ import Contact from "./Components/Contact";
 
 function App() {
   const [progress, setProgress] = useState(100)
-
+  
   return (
     <Router>
       <LoadingBar
@@ -25,12 +25,12 @@ function App() {
       <ProductsState setProgress={setProgress}>
         <Navbar />
         <Routes>
-          <Route exact path="/" element={<><Carousel /><Home /></>}/>
+          <Route exact path="/" element={<><Carousel /><Home progress={progress}/></>}/>
           <Route exact path="/productdes" element={<ProductDes />} />
-          <Route exact path={`/electronics`} element={<Home category='electronics'/>}/>
-          <Route exact path={`/jewelery`} element={<Home category='jewelery'/>}/>
-          <Route exact path={`/men`} element={<Home category='men'/>}/>
-          <Route exact path={`/women`} element={<Home category='women'/>}/>
+          <Route exact path={`/electronics`} element={<Home progress={progress} category='electronics'/>}/>
+          <Route exact path={`/jewelery`} element={<Home progress={progress} category='jewelery'/>}/>
+          <Route exact path={`/men`} element={<Home progress={progress} category='men'/>}/>
+          <Route exact path={`/women`} element={<Home progress={progress} category='women'/>}/>
           <Route exact path={'/contact'} element={<Contact/>}/>
         </Routes>
         <Footer />

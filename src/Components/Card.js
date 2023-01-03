@@ -5,7 +5,7 @@ import "./card.css";
 const Card = (props) => {
   const navigate = useNavigate();
   const productDes = (id) => {
-    navigate("/productdes",{state:{id:id}});
+    navigate("/productdes", { state: { id: id } });
   };
   return (
     <div className="col-md-3">
